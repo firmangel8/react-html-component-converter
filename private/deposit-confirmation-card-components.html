@@ -1,0 +1,121 @@
+<!--Deposit Confirmation Card-->
+<div data-component="DepositConfirmationCard">
+    <div class="card">
+        <div class="card-body">
+            <div class="d-flex">
+                <div class="col-12 text-center">
+                    <span class="f8-vw f-grey">Complete the form below to confirm your deposit. Please fill this form to confirm your transaction.
+                        <br/>Please fill out the information accurately and truthfully.</span>
+                </div>
+            </div>
+            <div class="d-flex mt-2">
+                <div class="col-12 text-center">
+                    <div class="w-100 bg-primary p-1">
+                        <span class="f-white f12-vw f-bold">
+                            DEPOSIT CONFIRMATION
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-column mt-3">
+                <form id="deposit-form" method="POST">
+                    <div class="form-group row">
+                        <label for="depositUsing" class="col-4 col-form-label col-form-label-sm text-right">
+                            Bank
+                        </label>
+                        <div class="col-6 px-0">
+                            <select id="depositUsing" name="depositUsing" class="form-control form-control-sm">
+                                <option value="BCA">Bank Central Asia - BCA</option>
+                                <option value="BNI">Bank Nasional Indonesia - BNI</option>
+                                <option value="BRI">Bank Rakyat Indonesia BRI</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="transferMethod" class="col-4 col-form-label col-form-label-sm text-right">
+                            Transfer Method
+                        </label>
+                        <div class="col-6 px-0">
+                            <select id="transferMethod" name="transferMethod" class="form-control form-control-sm">
+                                <option value="BCA-M">BCA Mobile</option>
+                                <option value="BNI-M">BNI Mobile</option>
+                                <option value="BRI-M">BRI Mobile</option>
+                                <option value="ATM">Via ATM</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="rekeningNo" class="col-4 col-form-label col-form-label-sm text-right">
+                            Your Bank Account Number
+                        </label>
+                        <div class="col-6 px-0">
+                            <input type="text" name="rekeningNo" class="form-control form-control-sm" id="rekeningNo" placeholder="89898 898967 7878">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="transferAmount" class="col-4 col-form-label col-form-label-sm text-right">
+                            Transfer Amount
+                        </label>
+                        <div class="col-6 px-0">
+                            <input type="text" name="transferAmount" class="form-control form-control-sm" id="rekeningNo" placeholder="89898 898967 7878">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="currency" class="col-4 col-form-label col-form-label-sm text-right">
+                            Currency
+                        </label>
+                        <div class="col-6 px-0">
+                            <select id="currency" name="currency" class="form-control form-control-sm">
+                                <option value="IDR">IDR</option>
+                                <option value="USD">USD</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="transferDate" class="col-4 col-form-label col-form-label-sm text-right">
+                            Transfer Date
+                        </label>
+                        <div class="col-6 px-0">
+                            <input type="text" name="transferDate" class="form-control form-control-sm" id="transferDate" placeholder="yyyy-mm-dd">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="transferRemark" class="col-4 col-form-label col-form-label-sm text-right">
+                            Transfer Remark (if any)
+                        </label>
+                        <div class="col-6 px-0">
+                            <input type="text" name="transferRemark" class="form-control form-control-sm" id="transferRemark" placeholder="">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="addiitionalNote" class="col-4 col-form-label col-form-label-sm text-right">
+                            Additional Note (optional)
+                        </label>
+                        <div class="col-6 px-0">
+                            <input type="text" name="addiitionalNote" class="form-control form-control-sm" id="addiitionalNote" placeholder="">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="transferReceipt" class="col-4 col-form-label col-form-label-sm text-right">
+                            Transfer Receipt
+                        </label>
+                        <div class="col-6 px-0">
+                            <input type="file" name="transferReceipt" class="form-control form-control-sm f10" id="transferReceipt" placeholder="">
+                            <small id="passwordHelpBlock" class="form-text text-muted">
+                                File type in .jpg, gif, png, pdf. Max file size in 3 MB.
+                            </small>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <div class="mb-3">
+                            <button type="submit" class="btn bg-green-smooth f-white">
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Deposit Confirmation Card-->
